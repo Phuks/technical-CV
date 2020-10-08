@@ -125,6 +125,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 2;
+    transition: 0.5s;
 }
 header .logo {
     color: white;
@@ -149,4 +150,15 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
+}
+
+/* Creating a sticky header Navigation Bar in CSS */
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header.sticky .logo, header.sticky ul li a {
+    color: #111;
 }

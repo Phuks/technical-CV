@@ -113,3 +113,40 @@ section {
 img {
     max-width: 100%;
 }
+
+/* Creating Menu's Header and Logo in CSS */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+header .logo {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header ul {
+    position: relative;
+    display: flex;
+
+}
+header ul li {
+    list-style-type: none;
+    position: relative;
+}
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}

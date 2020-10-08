@@ -19,10 +19,40 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image:url(img/image1.jpg);
+    background-image:url(img/image2.jpg);
     background-color: #111;
     background-repeat: no-repeat;
     background-position:100% center;
     background-size: contain;
 
+}
+
+.banner h2 {
+    font-size: 2.5em;
+    color: #444444;
+    font-weight: 300;
+    line-height: 1em;
+}
+.banner h2 span {
+    font-size: 1.2em;
+    color: #eeffee;
+}
+.banner h3 {
+    color: wheat;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: #009e55;
+    display: inline-block;
+    color: #000;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
 }

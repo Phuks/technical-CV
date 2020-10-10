@@ -1,9 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    max-width: 1600px;
+    font-size: 16px;
+    font-family: 'Poppins', 'Open Sans', sans-serif, arial;
 }
 
 /* Adding section tag fixed padding */
@@ -19,7 +21,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image:url(img/image2.jpg);
+    background-image:url('img/image2.jpg');
     background-color: #111;
     background-repeat: no-repeat;
     background-position:100% center;
@@ -57,6 +59,7 @@ section {
     font-size: 18px;
 }
 
+
 /* Creating an About me Layout in CSS */
 .heading {
     width: 100%;
@@ -80,20 +83,26 @@ section {
     padding-left: 40px;
     text-align: justify;
     /*display: inline-block;
-    float: right;*/
+    /*float: right;*/
 }
 .proPic {
-    width: 300px;
-    height: 350px;
+    width: 200px;
+    height: 250px;
     border-radius: 10%;
-    /*float:left;
-    border-top-left-radius: 30%;
+    float:left;
+    margin-right: 1rem;
+    /*display: inline-block;
+    /*border-top-left-radius: 30%;
     border-bottom-right-radius: 30%; */
 }
 .contentBox h2 {
     font-weight: 300;
     margin-bottom: 10px;
     /*float: right;*/
+}
+
+#wrapper {
+    padding-left: 1rem;
 }
 .heading.bottom {
     display: flex;
@@ -112,15 +121,21 @@ section {
 }
 img {
     max-width: 100%;
+    clear: none;
 }
 
 /* Creating Menu's Header and Logo in CSS */
+h1#logo {color: rgba(255, 208, 0, 0.726);font-family: 'Alex Brush', cursive; margin-top:1.5px; margin-left: -30px;}
 header {
+    max-height: 1200px;
+    /*background: url('img/image03.jpg');*/
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 40px 100px;
+    display: -webkit-flex;
+    display: -ms-flex;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -150,6 +165,12 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
+}
+#top {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Creating a sticky header Navigation Bar in CSS */

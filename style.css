@@ -58,7 +58,7 @@ section {
     font-weight: 500;
     font-size: 18px;
 }
-
+.gradient{background-color: linear-gradient(to right, #2196f3,#f44336);}
 
 /* Creating an About me Layout in CSS */
 .heading {
@@ -85,6 +85,8 @@ section {
     /*display: inline-block;
     /*float: right;*/
 }
+.w50 > a{font-size: 0.98em; border-radius: 5px; padding: 5px 20px;}
+
 .proPic {
     width: 200px;
     height: 250px;
@@ -95,6 +97,8 @@ section {
     /*border-top-left-radius: 30%;
     border-bottom-right-radius: 30%; */
 }
+/*.social-icons{margin-top: 300px;}
+.social-icons i{color: #fff;background: tomato; font-size: 1em; padding: 12px;margin-bottom: 20px; box-shadow: 0 10px 10px lightgray;}*/
 .contentBox h2 {
     font-weight: 300;
     margin-bottom: 10px;
@@ -182,4 +186,60 @@ header.sticky {
 
 header.sticky .logo, header.sticky ul li a {
     color: #111;
+}
+
+/* Creating a loader */
+#load {
+    width: 5em;
+    height: 5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar {
+    margin: 0.2em;
+    width: 0.75em;
+    height: 2.5em;
+
+    border: 0.1 solid var(--loader-bg-color);
+    border-left: 0.1em solid var(--loader-acc-color);
+    background-color: var(--loader-bg-color);
+
+    animation: 1.5s infinite load;
+}
+
+#bar-2{animation-delay: 0.25s}
+#bar-3{animation-delay: 0.5s}
+
+@keyframes load {
+    0% {height: 2.5em}
+    25% {height: 5em}
+    50% {height: 2.5em}
+    100% {height: 2.5em}
+}
+/* Creating My Skills Layout */
+#mySkills {
+    background-color: #f2f2f2;
+    background-color: linear-gradient(rgba(255,255,255,0.9),rgba(255,255,255,0.9)), url('img/skills-image01.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;padding: 50px 0; text-align: center;
+}
+.skill-bars{width: 80%;margin: auto;text-align: left;}
+.skill-icons { 
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex; margin-top: 40px; flex-wrap: wrap; justify-content: center;
+}
+.skill{width: 25%;min-width:200px;padding: 0 5px;box-sizing: border-box;}
+.skill i{font-size: 2.6em;color: #E58E00;margin: 0 10px;}
+.progress-bar{font-size: 0.7em;margin-top: 10px;}
+.progress-bar h3{margin: 8px 0;}
+.progress-bar span{
+    display: inline-block;
+    box-sizing: border-box;
+    color:#bda208;
+    text-align: right;
+    padding-right: 10px;
+    border-radius: 1em;
 }

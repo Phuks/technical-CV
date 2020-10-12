@@ -15,6 +15,12 @@
     <script src="ext.js" langauge="javascript"></script>
 </head>
 <body>
+    <!--Creating a loader-->
+    <div class="loader" id="load">
+        <div class="bar" id="bar-1"></div>
+        <div class="bar" id="bar-2"></div>
+        <div class="bar" id="bar-3"></div>
+    </div>
 
     <!--Creating Menu Tabs and Logo-->
     <header>
@@ -41,7 +47,7 @@
             <h2>HI, I am <br> <span>Lucky "Phuks" Khabe</span></h2>
             <h3>Aspiring Systems Analyst & Developer.</h3>
             <a href="#about" class="btn btn-explore">About Me</a>
-            <a href="#" class="btn btn-contact">Contact</a>
+            <a href="#" class="btn btn-contact gradient">Contact</a>
         </div>
     </section>
 
@@ -49,12 +55,19 @@
     <section class="about" id="about">
         <div class="heading">
             <p>Get to Know Me...</p>
-            <h2>About Me</h2>
+            <h2>About Me</h2><hr class="underline">
         </div>
         <div class="content">
+            <img src="img/image1.jpg" alt="My Profile Picture" class="proPic">
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
             <div class="w50">
                 <div class="contentBox w50">
-                    <img src="img/image1.jpg" alt="My Profile Picture" class="proPic">
                     <div class="" id="wrapper">
                     <h3>Who am I?</h3>
                     <h2><b>Lucky Phukuntsi Khabe</b>, a BSc Information Technology student at the North-West University [Vanderbijlpark Campus].</h2>
@@ -73,6 +86,7 @@
                                 serving them to that best of his abilities and using technology to do just that, hence the chosen career path. He decided that he will
                                 incorporate his science and engineering knowledge with his technological knowledge to solve various problems but first he must obtain
                                 his BSc IT degree. This degree would open a lot of doors for him to fulfill his dreams.</p>
+                                <a href="#" class="btn">Read More</a>
                 </div>
                     <div class="heading bottom">
                         <a href="img/resume.pdf" target="_blank" class="btn round">Download CV</a>
@@ -89,6 +103,48 @@
             </div>
         </div>
     </section>
-
+    <!--Creating My Skills Layout-->
+    <section id="mySkills">	
+        <h2 class="heading">My Skills</h2><hr class="underline">
+        <p>These are the skills I have accumulated over the years</p>
+        <div class="skill-icons">
+            <div class="skill">
+                <i class="fas fa-desktop"></i><h3>App/Web Development</h3>
+            </div>
+            <div class="skill">
+                <i class="fas fa-mobile-alt"></i><h3>Networking</h3>
+            </div>
+            <div class="skill">
+                <i class="fas fa-chart-bar"></i><h3>Analytics</h3>
+            </div>
+            <div class="skill">
+                <i class="fas fa-bullhorn"></i><h3>Leadership</h3>
+            </div>
+        </div>
+        <div class="skill-bars">
+            <div class="progress-bar"><h3>Python</h3><span class="bar gradient" style="width: 60%;">60%</span>
+            </div>
+            <div class="progress-bar"><h3>C++</h3><span class="bar gradient" style="width: 50%;">50%</span>
+            </div>
+            <div class="progress-bar"><h3>C#</h3><span class="bar gradient" style="width: 70%;">70%</span>
+            </div>
+            <div class="progress-bar"><h3>Java</h3><span class="bar gradient" style="width: 70%;">70%</span>
+            </div>
+            <div class="progress-bar"><h3>CAD</h3><span class="bar gradient" style="width: 65%;">65%</span>
+            </div>
+            <div class="progress-bar"><h3>CSS</h3><span class="bar gradient" style="width: 50%;">50%</span>
+            </div>
+            <div class="progress-bar"><h3>HTML</h3><span class="bar gradient" style="width: 50%;">50%</span>
+            </div>
+            <div class="progress-bar"><h3>JavaScript</h3><span class="bar gradient" style="width: 40%;">40%</span>
+            </div>
+            <div class="progress-bar"><h3>SQL(Databases)</h3><span class="bar gradient" style="width: 70%;">70%</span>
+            </div>
+            <div class="progress-bar"><h3>Revit</h3><span class="bar gradient" style="width: 60%;">60%</span>
+            </div>
+            <div class="progress-bar"><h3>Excel<span class="bar gradient" style="width: 75%;">75%</span>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
